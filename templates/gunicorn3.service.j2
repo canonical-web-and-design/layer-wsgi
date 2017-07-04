@@ -1,0 +1,16 @@
+[Unit]
+Description=Gunicorn for Python 3
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/environment
+PIDFile=/run/gunicorn3/pid
+RuntimeDirectory=gunicorn3
+WorkingDirectory={{ application_root }}
+ExecStart=/usr/bin/gunicorn3 --user {{ user }} --group {{ group }} --workers 9 --pid /run/gunicorn3/pid --bind 0.0.0.0:{{ port }} --log-syslog {{ wsgi_module }}
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

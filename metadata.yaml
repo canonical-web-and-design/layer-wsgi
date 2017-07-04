@@ -1,0 +1,13 @@
+series:
+    - xenial
+tags:
+    - python
+    - webservice
+provides:
+    website:
+        interface: http
+requires:
+    postgres:
+        interface: pgsql
+    mongo:
+        interface: mongodb

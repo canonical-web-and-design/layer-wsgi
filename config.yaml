@@ -1,0 +1,29 @@
+options:
+  port:
+    type: int
+    default: 80
+    description: The port where the WSGI service should listen
+  provision_command:
+    type: string
+    default: ""
+    description: A command to run in the application directory before running the WSGI application - e.g. for provisioning the database
+  pip_cache_dir:
+    type: string
+    default: ""
+    description: The name of a folder within the application from which to install pip dependencies
+  wsgi_module:
+    type: string
+    default: "wsgi:application"
+    description: The python path to the WSGI module and application
+  wsgi_logfile_path:
+    type: string
+    default: "/var/log/wsgi.service.log"
+    description: Where to store logs for the WSGI service
+  apt_dependencies:
+    type: string
+    default: ""
+    description: A space-separated list of apt dependencies for the WSGI application
+  environment_variables:
+    type: string
+    default: ""
+    description: "A space-separated list of environment variables. E.g.: 'VAR1=val1 VAR2=val2'"
