@@ -72,7 +72,7 @@ The WSGI layer adds the following relations to the charm:
 
 ### Provides
 
-- `website`: An implementation of [the `http` interface](http://interfaces.juju.solutions/interface/http/)). This could be used attaching an [HAProxy](https://jujucharms.com/haproxy) load-balancer, for example.
+- `website`: An implementation of [the `http` interface](http://interfaces.juju.solutions/interface/http/). This could be used attaching an [HAProxy](https://jujucharms.com/haproxy) load-balancer, for example.
 
 ### accepts
 
