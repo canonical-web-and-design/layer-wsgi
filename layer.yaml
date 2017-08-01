@@ -1,1 +1,2 @@
 includes: ['layer:basic', 'interface:http']
+repo: repo: git@github.com:canonical-webteam/layer-wsgi.git
