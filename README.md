@@ -1,5 +1,15 @@
 # WSGI charm layer
 
+## No longer maintained
+
+We created this layer for use in [the wsgi-app charm](https://github.com/canonical-webteam/charm-wsgi-app), but we never actually started using that app in production. We have now moved most of our hosted environments over to Kubernetes, so we won't maintain that charm going forward, or these associated layers.
+
+However, I do believe that both the charm and this layer could be generally useful, so please let me, @nottrobin, know if you would like to take over this project.
+
+----
+
+Please let me (@nottrobin) know if you want to take over this project.
+
 A [charm layer](https://jujucharms.com/docs/2.1/developer-layers) for serving a Python 3 application as a [WSGI service](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface).
 
 ## Usage
